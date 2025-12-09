@@ -1,11 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return Flask.render_template("index.html")
+    return render_template("index.html")
 
 @app.route("/vid")
 def vid():
-    return Flask.render_template("vid.html")
+    return render_template("vid.html")
