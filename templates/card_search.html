@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Card Search
+{% endblock %}
+
+{% block main %}
+    <div class="cards-search">
+        <form>
+            <input placeholder="Enter attributes/tags here to search them"/>
+        </form>
+    </div>
+    
+    <!--- Based on device viewport size-->
+    <div class="cards-view">
+        <p>
+            Mobile viewport sizes may show a column of 1 to 2 rows.
+            <br/>Tablet viewport sizes may show two columns of 2 rows.
+            <br/>Desktop viewport sizes may show many to many columns to many rows.
+        </p>
+    </div>
+{% endblock %}

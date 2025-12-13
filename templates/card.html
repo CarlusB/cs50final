@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Card Name
+{% endblock %}
+
+{% block main %}
+    <div>
+        <img />
+    </div>
+    
+    <!--- What show/written below depends of the card type(pokemon, energy, or trainer) -->
+    <div class = "card details">
+        <p>Show/Tell different details like type, damage, or other details shown on the card</p>
+    </div>
+
+    <div class = "card condition">
+        <p>Show/Tell the physical condition of the card</p>
+    </div>
+
+    <div class="other details">
+        <p>Show/Tell other details surrounding the card</p>
+    </div>
+
+    <div class="sales details">
+        <p>Things like price, tax, discount and such</p>
+    </div>
+{% endblock %}
