@@ -19,5 +19,5 @@ def card():
     return render_template("card.html")
 
 @app.route("/card_listing")
-def card():
+def card_listing():
     return render_template("card_listing.html")
