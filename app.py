@@ -17,3 +17,7 @@ def card_search():
 @app.route("/card")
 def card():
     return render_template("card.html")
+
+@app.route("/card_listing")
+def card():
+    return render_template("card_listing.html")
