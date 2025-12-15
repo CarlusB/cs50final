@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    Card Name
+    Card
 {% endblock %}
 
 {% block main %}
@@ -14,15 +14,30 @@
         <p>Show/Tell different details like type, damage, or other details shown on the card</p>
     </div>
 
-    <div class = "card condition">
-        <p>Show/Tell the physical condition of the card</p>
-    </div>
-
     <div class="other details">
-        <p>Show/Tell other details surrounding the card</p>
+        <p>Show/Tell other details concerning the card in general. Maybe history?</p>
     </div>
 
-    <div class="sales details">
-        <p>Things like price, tax, discount and such</p>
+    <div class="card listings">
+        <table>
+            <thead>
+                <tr>
+                    <th>condition</th>
+                    <th>scans</th>
+                    <th>price</th>
+                    <th>Add to cart</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>condition</td>
+                    <td>scans</td>
+                    <td>price</td>
+                    <td>Add to cart</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
+
+
 {% endblock %}
