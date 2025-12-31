@@ -4,7 +4,10 @@ mypy.ini
 config.py
 pokesql.sql
 jsontosql.py
-pokemon-tcg-data-master/
+pokemon-tcg-data-master/..gitmodules.swp
+pokemon-tcg-data-master/.gitignore
+pokemon-tcg-data-master/.editorconfig
+pokemon-tcg-data-master/v2_to_v1.rb
 __pycache__
 .mypy_cache/
 pokemontcg.db
