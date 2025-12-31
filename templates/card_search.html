@@ -6,17 +6,18 @@
 
 {% block main %}
     <div class="cards-search">
-        <form>
-            <input placeholder="Enter attributes/tags here to search them"/>
+        <form action="/card_search" method="post">
+            <input type="text" name="q" placeholder="Enter attributes/tags here to search them"/>
+            <button type="submit">Search</button>
         </form>
     </div>
     
     <!--- Based on device viewport size-->
+    {% if cards %}
     <div class="cards-view">
-        <p>
-            Mobile viewport sizes may show a column of 1 to 2 rows.
-            <br/>Tablet viewport sizes may show two columns of 2 rows.
-            <br/>Desktop viewport sizes may show many to many columns to many rows.
-        </p>
+        {% for card in cards %}
+            <img class="pokemon-pic" src="{{ card.images.small }}" alt="Image of {{ card.name }}"/>
+        {% endfor %}
     </div>
+    {% endif %}
 {% endblock %}

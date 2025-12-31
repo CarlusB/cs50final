@@ -1,2 +1,10 @@
 .venv/
 .env
+mypy.ini
+config.py
+pokesql.sql
+jsontosql.py
+pokemon-tcg-data-master/
+__pycache__
+.mypy_cache/
+pokemontcg.db

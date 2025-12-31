@@ -1,43 +1,15 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    Card
+    Card: {{ card.name }}
 {% endblock %}
 
 {% block main %}
     <div>
-        <img />
+        <img 
+        class="pokemon-pic" 
+        src="{{ card.images.large }}"
+        alt="Image of {{ card.name }}"/>
     </div>
-    
-    <!--- What show/written below depends of the card type(pokemon, energy, or trainer) -->
-    <div class = "card details">
-        <p>Show/Tell different details like type, damage, or other details shown on the card</p>
-    </div>
-
-    <div class="other details">
-        <p>Show/Tell other details concerning the card in general. Maybe history?</p>
-    </div>
-
-    <div class="card listings">
-        <table>
-            <thead>
-                <tr>
-                    <th>condition</th>
-                    <th>scans</th>
-                    <th>price</th>
-                    <th>Add to cart</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>condition</td>
-                    <td>scans</td>
-                    <td>price</td>
-                    <td>Add to cart</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
 
 {% endblock %}
