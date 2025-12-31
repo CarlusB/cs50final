@@ -13,10 +13,10 @@
     </div>
     
     <!--- Based on device viewport size-->
-    {% if cards %}
+    {% if images %}
     <div class="cards-view">
-        {% for card in cards %}
-            <img class="pokemon-pic" src="{{ card.images.small }}" alt="Image of {{ card.name }}"/>
+        {% for image in images %}
+            <img class="pokemon-pic" src="{{ image }}" alt="Image of pokemon"/>
         {% endfor %}
     </div>
     {% endif %}
