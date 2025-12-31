@@ -5,8 +5,6 @@ import MySQLdb
 
 app = Flask(__name__)
 
-print(config.POKEMONTCG_IO_API_KEY)
-
 @app.route("/")
 def index():
     return render_template("index.html")
