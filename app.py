@@ -24,8 +24,12 @@ def card_search():
     cur = con.cursor()
 
     cur.execute("SELECT details FROM cards")
-    cards = json.loads(cur.fetchall())
+    tuple = json.loads(cur.fetchall())
+    cards = []
     images = []
+
+    for card in tuple:
+        cards.append(json.loads(card))
     for card in cards:
         images.append(card["images"]["small"])
 
