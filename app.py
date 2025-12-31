@@ -24,11 +24,11 @@ def card_search():
     cur = con.cursor()
 
     cur.execute("SELECT details FROM cards")
-    tuple = json.loads(cur.fetchall())
+    poke_tuble = cur.fetchall()
     cards = []
     images = []
 
-    for card in tuple:
+    for card in poke_tuble:
         cards.append(json.loads(card))
     for card in cards:
         images.append(card["images"]["small"])
